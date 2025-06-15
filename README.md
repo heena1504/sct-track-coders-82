@@ -1,73 +1,84 @@
-# Welcome to your Lovable project
 
-## Project info
+# House Price Prediction - Machine Learning Internship
 
-**URL**: https://lovable.dev/projects/c06ccaf8-0afb-434b-a162-e92664cd1759
+## Project Overview
 
-## How can I edit this code?
+This is a machine learning web application that predicts house prices using linear regression. The model analyzes square footage, number of bedrooms, and bathrooms to estimate property values in Indian Rupees.
 
-There are several ways of editing your application.
+**Developer**: Heena  
+**Task**: ML Internship - House Price Prediction using Linear Regression
 
-**Use Lovable**
+## Features
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/c06ccaf8-0afb-434b-a162-e92664cd1759) and start prompting.
+- Interactive house specification form
+- Linear regression price prediction model
+- Results displayed in Indian Rupees (INR)
+- AI assistant for help and explanations
+- Responsive design with modern UI
+- Real-time prediction confidence scoring
 
-Changes made via Lovable will be committed automatically to this repo.
+## How to Run
 
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
+Follow these steps to run the application locally:
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
+# Step 1: Clone the repository
 git clone <YOUR_GIT_URL>
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+# Step 2: Navigate to the project directory
+cd house-price-prediction
 
-# Step 3: Install the necessary dependencies.
-npm i
+# Step 3: Install dependencies
+npm install
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Step 4: Start the development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
+## Technologies Used
 
 This project is built with:
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+- **Frontend**: React with TypeScript
+- **Styling**: Tailwind CSS with shadcn-ui components
+- **Machine Learning**: Custom Linear Regression implementation
+- **Build Tool**: Vite
+- **Icons**: Lucide React
 
-## How can I deploy this project?
+## Machine Learning Model
 
-Simply open [Lovable](https://lovable.dev/projects/c06ccaf8-0afb-434b-a162-e92664cd1759) and click on Share -> Publish.
+The application implements a custom linear regression model that:
+- Uses multiple linear regression with 3 features
+- Calculates R-squared for model accuracy
+- Provides confidence scoring for predictions
+- Converts USD predictions to Indian Rupees
 
-## Can I connect a custom domain to my Lovable project?
+## Model Features
 
-Yes, you can!
+1. **Square Footage** - Primary factor affecting price
+2. **Number of Bedrooms** - Secondary factor
+3. **Number of Bathrooms** - Additional factor
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+The model is trained on sample housing data and provides predictions with confidence intervals.
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+## Project Structure
+
+```
+src/
+├── components/           # React components
+│   ├── PredictionForm.tsx   # Input form for house details
+│   └── Results.tsx          # Prediction results display
+├── pages/               # Application pages
+│   └── Index.tsx           # Main application page
+├── utils/               # Utility functions
+│   └── linearRegression.ts  # ML model implementation
+└── main.tsx            # Application entry point
+```
+
+## Deployment
+
+The application can be deployed to any static hosting service like Vercel, Netlify, or GitHub Pages.
+
+---
+
+**Note**: This project was developed as part of a machine learning internship to demonstrate linear regression implementation for house price prediction.
