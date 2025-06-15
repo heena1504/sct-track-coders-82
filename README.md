@@ -6,6 +6,7 @@
 This is a machine learning web application that predicts house prices using linear regression. The model analyzes square footage, number of bedrooms, and bathrooms to estimate property values in Indian Rupees.
 
 **Developer**: Heena  
+**Project ID**: sct_trackcode_1  
 **Task**: ML Internship - House Price Prediction using Linear Regression
 
 ## Features
@@ -40,7 +41,7 @@ npm run dev
 This project is built with:
 
 - **Frontend**: React with TypeScript
-- **Styling**: Tailwind CSS with shadcn-ui components
+- **Styling**: Tailwind CSS with Shadcn-ui components
 - **Machine Learning**: Custom Linear Regression implementation
 - **Build Tool**: Vite
 - **Icons**: Lucide React
@@ -81,4 +82,5 @@ The application can be deployed to any static hosting service like Vercel, Netli
 
 ---
 
-**Note**: This project was developed as part of a machine learning internship to demonstrate linear regression implementation for house price prediction.
+**Note**: This project was developed by Heena as part of a machine learning internship to demonstrate linear regression implementation for house price prediction.
+**Project Tracking**: sct_trackcode_1
