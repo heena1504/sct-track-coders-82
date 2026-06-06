@@ -1,4 +1,6 @@
-
+## Author
+Heena Harshi
+GitHub: heena1504
 # House Price Prediction - Machine Learning Internship
 
 ## Project Overview
